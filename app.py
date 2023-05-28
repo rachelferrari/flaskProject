@@ -18,11 +18,6 @@ def greet(name=""):
     return f"Hello {name}"
 
 
-MENU = """C - Convert Celsius to Fahrenheit
-    F - Convert Fahrenheit to Celsius
-    Q - Quit"""
-
-
 @app.route('/f')
 @app.route('/f/<celsius>')
 def convert_celsius(celsius="0.0"):
